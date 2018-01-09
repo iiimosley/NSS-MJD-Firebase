@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Firebase Exercise</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Firebase Practice</h1>
+    <h2>Customers</h2>
+    <div class="editFeat">
+    <h3>new member</h3>
+        <input type="text" placeholder="name" id="custName" value="Pauly Shore">
+        <input type="number" placeholder="age" id="custAge" min=18 max=120 value=47>
+        <select id="custLevel">
+            <option>platinum</option>
+            <option>gold</option>
+            <option>silver</option>
+        </select>
+        <button id="addCustomer">add customer</button>
+    </div>
+    <div class="editFeat">
+        <h3>update membership</h3>
+        <select id="editCust">
+        </select>
+        <select id="memberLevel">
+            <option>platinum</option>
+            <option>gold</option>
+            <option>silver</option>
+        </select>
+        <button id="editMember">update membership</button>
+    </div>
+    <div class="editFeat">
+        <h3>delete membership</h3>
+        <select id="deleteCust">
+        </select>
+        <button id="deleteMember">delete</button>
+    </div>
+
+    
+    <h2>Categories</h2>
+    <div class="editFeat">
+    <h3>add category</h3>
+        <input type="text" id="newCat" value="blowy-up">
+        <button id="addCat">create category</button>
+    </div>
+    <div id="categories"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="dist/app.js"></script>
+</body>
+
+</html>
