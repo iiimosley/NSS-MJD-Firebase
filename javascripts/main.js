@@ -142,8 +142,8 @@ function listMems(memData) {
     $("#editCust").html("");
     $("#deleteCust").html("");
     memKey.forEach(mem => {
-        $("#editCust").append(`<option id="${mem}">${memData[mem].name}<option>`);
-        $("#deleteCust").append(`<option id="${mem}">${memData[mem].name}<option>`);
+        $("#editCust").append(`<option id="${mem}">${memData[mem].name}</option>`);
+        $("#deleteCust").append(`<option id="${mem}">${memData[mem].name}</option>`);
     });
 }
 
